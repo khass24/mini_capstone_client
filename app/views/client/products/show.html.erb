@@ -1,0 +1,9 @@
+<a href="/client/products">Home</a>
+
+<h2><%= @product["name"] %></h2>
+<h3>Price: <%= number_to_currency(@product["price"]) %></h3>
+<h5>Description: <%= @product["description"] %></h5>
+<h5>Supplier ID: <%= @product["supplier_id"] %></h5>
+
+<a href="/client/products/<%= @product["id"] %>/edit">Edit</a>
+<a href="/client/products/<%= @product["id"] %>" data-method="delete">Delete</a>

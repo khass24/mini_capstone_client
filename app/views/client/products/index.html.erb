@@ -1,6 +1,6 @@
 <h1>Players to Sell</h1>
 <% @products.each do |product| %>
-  <h2><%= product["name"] %></h2>
+  <h2><a href="/client/products/<%= product["id"] %>"><%= product["name"] %></a></h2>
   <h3>Market Price: <%= number_to_currency(product["price"]) %></h3>
   <h4>Position: <%= product["description"] %></h4>
   <br>
